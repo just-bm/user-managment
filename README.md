@@ -1,6 +1,5 @@
 # User Management System
 
-![System Architecture](https://via.placeholder.com/800x400?text=SpringBoot+Angular+PostgreSQL+Architecture)
 
 A full-stack application for managing users with authentication, authorization, and CRUD operations.
 
