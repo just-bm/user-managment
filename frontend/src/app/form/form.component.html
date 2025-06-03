@@ -1,0 +1,35 @@
+<div class="form-container">
+  <h2>Contact Form</h2>
+  
+  <div *ngIf="success" class="success-message">
+    Form submitted successfully!
+  </div>
+  
+  <form [formGroup]="formGroup" (ngSubmit)="onSubmit()">
+    <div class="form-field">
+      <label for="name">Name</label>
+      <input id="name" type="text" formControlName="name">
+      <div *ngIf="submitted && formGroup.controls['name'].errors" class="error">
+        Name is required
+      </div>
+    </div>
+    
+    <div class="form-field">
+      <label for="email">Email</label>
+      <input id="email" type="email" formControlName="email">
+      <div *ngIf="submitted && formGroup.controls['email'].errors" class="error">
+        Valid email is required
+      </div>
+    </div>
+    
+    <div class="form-field">
+      <label for="message">Message</label>
+      <textarea id="message" formControlName="message" rows="4"></textarea>
+      <div *ngIf="submitted && formGroup.controls['message'].errors" class="error">
+        Message is required
+      </div>
+    </div>
+    
+    <button type="submit">Submit</button>
+  </form>
+</div>

@@ -1,0 +1,5 @@
+com\example\formapp\controller\FormController.class
+com\example\formapp\model\FormData.class
+com\example\formapp\repository\FormRepository.class
+com\example\formapp\FormApplication.class
+com\example\formapp\service\FormService.class
